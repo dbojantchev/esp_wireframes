@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Catalog - ESP Warehouse</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">ESP Warehouse</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="./catalog/list.html">Catalog</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Transfer <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#addItem" data-title="Add an item" data-toggle="modal" data-target="#addItem">Add an item</a>
+                            </li>
+                            <li>
+                                <a href="./transfer/">Transfer an item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sales/index.html">Bid Sales</a>
+                    </li>
+                    <li>
+                        <a href="./donations/">Donations</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact Us</a>
+                    </li>
+                    <li data-placement="top" data-toggle="tooltip" title="Login">
+						<a href="#login" data-title="Login" data-toggle="modal" data-target="#login"><i class="fa fa-lock fa-stack-1x"></i> </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        
+        <div class="row" style="margin-top:20px">
+            <div class="col-lg-6">
+                <h1>Catalog</h1>
+            </div>
+            <div class="col-lg-6" style="margin-top:20px">
+                <div class="btn-group pull-left" role="group" aria-label="..." style="margin-right:3px">
+                  <button type="button" class="btn btn-default"><i class="fa fa-shopping-cart" style="color:#006d9d"></i> View cart</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Page view
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="./catalog/list.html">List view</a></li>
+                      <li><a href="./catalog/grid-large.html">Grid (large)</a></li>
+                      <li><a href="./catalog/grid-medium.html">Grid (medium)</a></li>
+                      <li><a href="./catalog/grid-small.html">Grid (small)</a></li>
+                      <li><a href="./catalog/thumbnail.html">Thumbnails</a></li>
+                    </ul>
+                  </div>
+                </div>
+            	<div class="input-group col" style="margin-right:3px">
+					<input type="text" class="form-control" placeholder="Search for item">
+					<span class="input-group-btn">
+					<button class="btn btn-default" type="button"><i class="fa fa-search" style="color:#006d9d"></i></button>
+					</span>
+                </div>
+            </div>
+
+        </div>
+        
+        <hr>
+        
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="#">
+                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h4>Item name <a class="btn btn-default btn-xs" href="#"><i class="fa fa-shopping-cart" style="color:#5cb85c"></i></a> <a class="btn btn-default btn-xs" href="./catalog/item-detail.html"><i class="fa fa-info-circle" style="color:#006d9d"></i></a> <a class="btn btn-default btn-xs" href="#"><i class="fa fa-map-marker" style="color:#da6426"></i></a></h4>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+        <!-- Pagination -->
+        <div align="center">
+                          <ul class="pagination pagination-sm">
+                            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                          </ul>
+		</div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Begin Modal Window -->
+                  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background-color:#006d9d">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:#fff"></span></button>
+                          <h4 class="modal-title custom_align" id="Heading" style="color:#fff">Login to ESP Administration</h4>
+                          
+                        </div>
+                        <div class="modal-body">
+                          <form accept-charset="UTF-8" role="form">
+                    <fieldset>
+			    	  	<div class="form-group">
+			    		    <input class="form-control" placeholder="NUID" name="email" type="text">
+			    		</div>
+			    		<div class="form-group">
+			    			<input class="form-control" placeholder="Password" name="password" type="password" value="">
+			    		</div>
+			    		<div class="checkbox">
+			    	    	<label>
+			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
+			    	    	</label>
+			    	    </div>
+			    	</fieldset>
+			      	</form>
+                        </div>
+                        <div class="modal-footer ">
+                          <a href="./admin/"><button type="button" class="btn btn-default" ><span class="glyphicon glyphicon-ok" style="color:#7fb741"></span> Login</button></a>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" style="color:#d9534f"></span> Cancel</button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content --> 
+                    </div>
+                    <!-- /.modal-dialog --> 
+                  </div>
+                  <!-- / End Modal Window -->
+                  <!-- Begin Add Item Modal Window -->
+                  <div class="modal fade" id="addItem" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background-color:#006d9d">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:#fff"></span></button>
+                          <h4 class="modal-title custom_align" id="Heading" id="Heading" style="color:#fff">Add a new item</h4>
+                           
+                        </div>
+                        <div class="modal-body">
+							<div class="row">
+                            	<div class="col-md-12">
+                                <p>Fill out the form below to add a new item. An item number will be assigned when you click save.</p>
+                                	<div class="form-group">
+                        				<textarea class="form-control" placeholder="Enter a description of the item" required></textarea>
+                                  </div>
+                                </div>
+                            	<div class="col-md-6"> 
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Serial number" required />
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Disposition" required />
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Quantity" required />
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Bio medical number" required />
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Warehouse location" required />
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Item value" required />
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                	<div class="form-group">
+                        				<textarea class="form-control" placeholder="Notes" required></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                	<form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                                        <div class="form-inline">
+                                          <div class="form-group">
+                                            <input type="file" name="files[]" id="js-upload-files" multiple>
+                                          </div>
+                                          <button type="submit" class="btn btn-sm btn-default" id="js-upload-submit"><span class="glyphicon glyphicon-upload" style="color:#006d9d"></span> Upload files</button>
+                                        </div>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                          	<button type="button" class="btn btn-default" data-dismiss="modal" ><span class="glyphicon glyphicon-ok" style="color:#7fb741"></span> Save item</button>
+          					<button type="button" class="btn btn-default" data-dismiss="modal" ><span class="glyphicon glyphicon-ok" style="color:#7fb741"></span> Save item and add another</button>
+          					<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" style="color:#d9534f"></span> Close</button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content --> 
+                    </div>
+                    <!-- /.modal-dialog --> 
+                  </div>
+                   <!-- /End Add Item Modal Window -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row pull-right">
+                <div class="col-lg-12">
+                	<img src="./images/kp-logo.jpg" width="150" height="17" alt="KP Logo"><br>
+					<small>Copyright &copy; Kaiser Permanente 2015</small>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
